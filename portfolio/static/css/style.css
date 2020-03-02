@@ -1,0 +1,79 @@
+@font-face {
+  font-family: Lato;
+  src: url('../fonts/lato/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: LeagueSpartan;
+  src: url('../fonts/league-spartan/LeagueSpartan-Bold.otf');
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/montserrat/Montserrat-Regular.otf');
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url('../fonts/open-sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: PlayfairDisplay;
+  src: url('../fonts/playfair-display/PlayfairDisplaySC-Regular.otf');
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('../fonts/roboto/Roboto-Regular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 2vh;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+}
+
+nav {
+  width: 25%;
+  background: gray;
+}
+
+main {
+  width: 75%;
+  background: green;
+}
+
+ul {
+  width: 100%;
+}
+
+li, li a {
+  margin: 1rem auto;
+  font-size: 2rem;
+  text-align: center;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+a:hover {
+  color: rgb(63, 63, 63);
+}
+
+.logo-img {
+  justify-content: center;
+  height: 10rem;
+  width: 10rem;
+  margin: 3rem;
+}

@@ -1,0 +1,34 @@
+{% load static %}
+{% load i18n %}
+{% load l10n %}
+
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <link rel="shortcut icon" href="{% static 'img/logo.png' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="utf-8">
+    <title>{% trans 'Portfólio' %} - André Cristian de Oliveira</title>
+    {% block head %}
+    {% endblock %}
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#"><img class="logo-img" src="{% static 'img/logo.png' %}" alt="{% trans 'Logotipo portfólio' %}"></a></li>
+        <li><a href="#">{% trans 'Biografia' %}</a></li>
+        <li><a href="#">{% trans 'Histórico acadêmico' %}</a></li>
+        <li><a href="#">{% trans 'Experiência profissional' %}</a></li>
+        <li><a href="#">{% trans 'Projetos' %}</a></li>
+        <li><a href="#">{% trans 'Blog' %}</a></li>
+        <li><a href="#">{% trans 'Contato' %}</a></li>
+      </ul>
+    </nav>
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+    {% block js %}
+    {% endblock %}
+  </body>
+</html>
